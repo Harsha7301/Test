@@ -1,0 +1,134 @@
+
+1. class Method {
+	
+	static void car(){
+	System.Out.println("running in car");
+	}
+
+	static void car(String name){
+	System.Out.println(" name "+name);
+	}
+
+}
+
+class MethodRunner{
+	
+	public staic void main(String[] args){
+
+	Method.car();
+	Method.car("Benz");
+	}
+}
+
+
+2. There are 3 type of variables 
+   1. local variable
+
+   example: class Method{
+
+   static void car(){
+   int a =1;
+	System.Out.println("a is : " +a);
+	}
+   }
+   
+   2. intance variable
+
+   example:
+
+   class Method{
+   int a = 1;
+
+   static void car(){
+	System.Out.println("a is : " +a);
+	}
+
+
+   3. static variable
+
+   example:
+
+   class Method{
+   static int a = 1;
+
+   static void car(){
+   System.Out.println("a is : " +a);
+	}
+	}
+
+3.	stack memory consists of stack frame where the variable are intialise and values are take from constant pool.
+	heap memory consists of constant pool and instance memory
+	constant pool : it has variable and its  values.
+	instance memory : it has no static variable.
+
+
+4.
+
+	class Bike{
+
+	String brand;
+	float price;
+	String type;
+
+	Bike(){
+	System.Out.println("invoking main in const");
+	}
+
+	Bike(){
+	System.Out.println("invoking main in const");
+	}
+
+	Bike(String brand){
+	System.Out.println("invoking in const2");
+	}
+}
+
+   class BikeRunner{
+
+   public static void main(String[] args){
+
+    Bike ref1= new Bike();
+    Bike ref2= new Bike("Ducati");
+    System.Out.println("the brand is : "+ ref2.brand);
+    }
+   }
+
+5.  class Train{
+	int trainno=12089;
+	String name="XYZ";
+
+	void getinfo(){
+	System.Out.println("the trian no is :"+trianno);
+	}
+}
+
+  class TrainRunner{
+
+  public static void main(String[] args){
+
+  Train.getinfo();
+  }
+
+  }
+
+6. class Train{
+	static int trainno=12089;
+	static String name="XYZ";
+
+	staic void getinfo(){
+	System.Out.println("the trian no is :"+trianno);
+	}
+}
+
+  class TrainRunner{
+
+  public static void main(String[] args){
+
+  Train.getinfo();
+  }
+
+  } 
+
+
+
+    
